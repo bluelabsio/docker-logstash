@@ -21,5 +21,7 @@ RUN cd /tmp && \
 
 VOLUME /conf
 
+EXPOSE 5043
+
 # Start logstash
 CMD /opt/logstash/bin/logstash -f /conf/logstash.conf
