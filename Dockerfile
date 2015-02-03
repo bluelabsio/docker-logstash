@@ -24,4 +24,4 @@ VOLUME /conf
 EXPOSE 5043
 
 # Start logstash
-CMD /opt/logstash/bin/logstash -f /conf/logstash.conf
+CMD /opt/logstash/bin/logstash -J-Xmx1024m -f /conf/logstash.conf
